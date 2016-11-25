@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$post_title} {$site_name} </title>
+    <meta name="keywords" content="{$post_keywords}" />
+    <meta name="description" content="{$post_excerpt}">
+    <link href="__PUBLIC__/simpleboot/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <style>
+        #article_content img{height:auto !important}
+        #article_content {word-wrap: break-word;}
+        .btn {margin-top: 33px;}
+
+    </style>
+</head>
+<body class="" bgcolor="#faebd7">
+
+<div class="container tc-main">
+    <div class="row">
+        <div class="span3"></div>
+        <div class="span9">
+
+            <div class="tc-box first-box article-box">
+                <h2>{$post_title}</h2>
+                <div class="article-infobox">
+                    <span>{$post_date}</span>
+                </div>
+                <hr>
+                <div id="article_content">
+                    {$post_content}
+                </div>
+            </div>
+
+            <php>$ad=sp_getad("portal_article_bottom");</php>
+            <if condition="!empty($ad)">
+                <div class="tc-box">
+                    <div class="headtitle">
+                        <h2>赞助商</h2>
+                    </div>
+                    <div>
+                        {$ad}
+                    </div>
+                </div>
+            </if>
+
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+[ 2016-11-25T09:35:50+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/usersList/menuid/174
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0410s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: sex D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 927 行.
+NOTIC: [8] Undefined index: nickname D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 930 行.
+SQL: SHOW COLUMNS FROM `gg_wx_users` [ RunTime:0.0310s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gg_wx_users` LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_wx_users` ORDER BY subscribe_time desc LIMIT 0,20   [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_wx_users` ORDER BY id desc LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-11-25T09:36:01+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/getUsers/next_openid/oFfUqs10RoiB5lV6DRer_xOr_AgI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0070s ]
+SQL: UPDATE `gg_wx_user` SET `web_access_token`='y0ZMIr9AuQ9e7SXvrb-MFrbps9e8aFCx6iLnM1vOdESf7J07o-fQcZitwnCKCCF7V6A0YKQa-WtVokXEhLnR-PbY2SrhHIQCgZoOC_X_9dFoZP_mQ1TPWVaKNujEGxGbRNLcAHAYUS',`web_expires`='1480044761' WHERE `id` = 1 [ RunTime:0.0060s ]
+SQL: UPDATE `gg_wx_user` SET `web_access_token`='y0ZMIr9AuQ9e7SXvrb-MFrbps9e8aFCx6iLnM1vOdESGzxfPaL8vNxLdgBT92EF5fjb5h8sWK5A7jbIpZgn986uAx0MAmU3buUEA81KLWoF6IHs-0Ot8u8kdF0WDQjMhZZXcAHAHHF',`web_expires`='1480044761' WHERE `id` = 1 [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: data D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 889 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-25T09:36:03+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/usersList/menuid/174
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: sex D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 927 行.
+NOTIC: [8] Undefined index: nickname D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 930 行.
+SQL: SHOW COLUMNS FROM `gg_wx_users` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gg_wx_users` LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_wx_users` ORDER BY subscribe_time desc LIMIT 0,20   [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_wx_users` ORDER BY id desc LIMIT 1   [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

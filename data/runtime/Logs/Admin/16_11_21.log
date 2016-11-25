@@ -1,0 +1,1343 @@
+[ 2016-11-21T13:50:20+08:00 ] 127.0.0.1 /index.php/admin/public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-21T13:50:20+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-11-21T13:50:28+08:00 ] 127.0.0.1 /index.php/public/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `gg_role_user` [ RunTime:0.0080s ]
+SQL: SELECT `role_id` FROM gg_role_user a INNER JOIN gg_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0060s ]
+SQL: UPDATE `gg_users` SET `user_login`='admin',`user_pass`='###2328436645bc75006394b5c89936b51e',`user_nicename`='admin',`user_email`='asdfasfd@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2016-11-21 13:50:28',`create_time`='2016-05-09 10:15:45',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0080s ]
+
+[ 2016-11-21T13:50:28+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 126 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 127 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 129 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 131 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 162 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 163 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 132 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 140 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 85 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 100 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 1 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 7 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 18 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 164 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 165 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 167 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 168 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 170 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 171 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 172 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 173 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 39 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 40 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 41 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 42 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-21T13:50:28+08:00 ] 127.0.0.1 /index.php/Main/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: select VERSION() as version [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-21T14:14:49+08:00 ] 127.0.0.1 /index.php/Admin/Menu/index/menuid/100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gg_menu` [ RunTime:0.0090s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `gg_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_menu` ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-21T14:14:53+08:00 ] 127.0.0.1 /index.php/Menu/add/parentid/164/menuid/100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `gg_menu` [ RunTime:0.0200s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `gg_auth_rule` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_menu` ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-21T14:15:25+08:00 ] 127.0.0.1 /index.php/Menu/add_post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_menu` [ RunTime:0.0080s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `gg_auth_rule` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\backend\simplewind\Core\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `gg_menu` WHERE `app` = 'Weixin' AND `model` = 'Indexadmin' AND `action` = 'usersList' LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `parentid` FROM `gg_menu` WHERE `id` = 164 LIMIT 1   [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\backend\simplewind\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `gg_menu` (`parentid`,`name`,`app`,`model`,`action`,`data`,`icon`,`remark`,`status`,`type`) VALUES ('164','微信用户列表','Weixin','Indexadmin','usersList','','','','1','1') [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_auth_rule` WHERE `name` = 'weixin/indexadmin/userslist' LIMIT 1   [ RunTime:0.0050s ]
+SQL: INSERT INTO `gg_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('weixin/indexadmin/userslist','Weixin','admin_url','微信用户列表') [ RunTime:0.0110s ]
+
+[ 2016-11-21T14:15:25+08:00 ] 127.0.0.1 /index.php/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gg_menu` [ RunTime:0.0110s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `gg_auth_rule` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_menu` ORDER BY `listorder` ASC  [ RunTime:0.0080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-21T14:15:39+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gg_menu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_menu`  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 126 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 127 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 129 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 131 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 162 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 163 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 132 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 140 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 85 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 100 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 1 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 7 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 18 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 164 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 165 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 167 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 168 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 170 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 171 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 172 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 173 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 174 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 39 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 40 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 41 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 42 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-21T14:15:39+08:00 ] 127.0.0.1 /index.php/Main/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: select VERSION() as version [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-21T14:19:29+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 126 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 127 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 129 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 131 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 162 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 163 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 132 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 140 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 85 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 100 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 1 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 7 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 18 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 164 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 165 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 167 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 168 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 170 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 171 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 172 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 173 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 174 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 39 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 40 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 41 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 42 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-11-21T14:19:29+08:00 ] 127.0.0.1 /index.php/Main/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0070s ]
+SQL: select VERSION() as version [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-21T14:28:31+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_menu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 126 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 127 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 129 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 131 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 162 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 163 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 132 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 140 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0190s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 85 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 100 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 1 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 7 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 18 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 164 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 165 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 167 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 168 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 170 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 171 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 172 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 173 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 174 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 39 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 40 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 41 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 42 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-21T14:28:31+08:00 ] 127.0.0.1 /index.php/Main/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: select VERSION() as version [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-21T14:32:11+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gg_menu` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 126 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 127 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 129 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 131 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 162 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 163 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 132 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 140 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 85 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 100 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 1 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 7 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 18 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 164 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 165 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 167 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 168 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 170 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 171 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 172 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 173 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 174 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 39 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 40 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 41 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 42 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-21T14:32:12+08:00 ] 127.0.0.1 /index.php/Main/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: select VERSION() as version [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-21T14:38:32+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `gg_menu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 126 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 127 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 129 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 131 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 162 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 163 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 132 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 140 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 85 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 100 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 1 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 7 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 18 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 164 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 165 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 167 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 168 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 170 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 171 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 172 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 173 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 174 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 39 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 40 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 41 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 42 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-21T14:38:32+08:00 ] 127.0.0.1 /index.php/Main/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0070s ]
+SQL: select VERSION() as version [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-21T14:38:55+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gg_menu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 126 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 127 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 129 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 131 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 162 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 163 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 132 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 140 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 85 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 100 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 1 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 7 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 18 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 164 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 165 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 167 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 168 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 170 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 171 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 172 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 173 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 174 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0180s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 39 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 40 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 41 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 42 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-21T14:38:55+08:00 ] 127.0.0.1 /index.php/Main/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: select VERSION() as version [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-21T14:39:28+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `gg_menu` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 126 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 127 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 129 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 131 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 162 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 163 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 132 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 140 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 85 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 100 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 1 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 7 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 18 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 164 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 165 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 167 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 168 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 170 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 171 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 172 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 173 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 174 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 39 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 40 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 41 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 42 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-21T14:39:28+08:00 ] 127.0.0.1 /index.php/Main/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: select VERSION() as version [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-21T14:42:11+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gg_menu` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 126 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 127 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 129 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 131 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 162 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 163 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 132 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 140 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 85 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 100 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 1 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 7 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 18 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 164 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 165 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 167 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 168 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 170 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 171 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 172 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 173 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 174 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 39 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 40 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 41 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 42 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-21T14:42:11+08:00 ] 127.0.0.1 /index.php/Main/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: select VERSION() as version [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-21T15:10:56+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_menu` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 126 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 127 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 129 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 131 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 162 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 163 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 132 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 140 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 85 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 100 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 1 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 7 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 18 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 164 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 165 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 167 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 168 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 170 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 171 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 172 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 173 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 174 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 39 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 40 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 41 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 42 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-21T15:10:56+08:00 ] 127.0.0.1 /index.php/Main/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: select VERSION() as version [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-21T15:11:13+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gg_menu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 126 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 127 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 129 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 131 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 162 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0110s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 163 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 132 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0250s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 140 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 85 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 100 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 1 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 7 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 18 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 164 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 165 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 167 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 168 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 170 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 171 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 172 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 173 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 174 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 39 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 40 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 41 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 42 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-21T15:11:14+08:00 ] 127.0.0.1 /index.php/Main/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: select VERSION() as version [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-21T15:19:38+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gg_menu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 126 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 127 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 129 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 131 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 162 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 163 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 132 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 140 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 85 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 100 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 1 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 7 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 18 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 164 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 165 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 167 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 168 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 170 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 171 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 172 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 173 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 174 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 39 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 40 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 41 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 42 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-21T15:19:38+08:00 ] 127.0.0.1 /index.php/Main/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: select VERSION() as version [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-21T15:20:25+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gg_menu` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 126 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 127 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 129 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 131 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 162 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 163 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 132 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 140 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 85 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 100 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 1 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 7 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 18 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 164 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 165 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 167 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 168 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 170 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 171 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 172 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 173 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 174 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 39 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 40 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 41 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 42 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-21T15:20:25+08:00 ] 127.0.0.1 /index.php/Main/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: select VERSION() as version [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-21T15:21:39+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 126 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 127 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 129 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 131 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 162 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 163 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 132 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 140 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 85 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 100 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 1 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 7 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 18 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 164 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 165 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 167 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 168 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 170 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 171 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 172 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 173 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 174 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 39 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 40 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 41 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_menu` WHERE `parentid` = 42 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-21T15:21:39+08:00 ] 127.0.0.1 /index.php/Main/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: select VERSION() as version [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

@@ -1,0 +1,57 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Weixin/Indexadmin/texts')}">文本回复列表</a></li>
+			<li class="active"><a href="{:U('Weixin/Indexadmin/add_texts')}">添加回复</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Weixin/Indexadmin/add_texts_post')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">关键字：</label>
+					<div class="controls">
+						<select name="keyword">
+							{$option}
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">回复：</label>
+					<div class="controls">
+						<textarea class="form-control" rows="5" name="reply" required style="width: 420px"></textarea>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+				<a class="btn" href="{:U('Weixin/Indexadmin/texts')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+	<script type="text/javascript">
+		//编辑器路径定义
+		var editorURL = GV.DIMAUB;
+	</script>
+	<script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.all.min.js"></script>
+
+	<script type="text/javascript">
+		//iframe层 上传图片
+		$('.uploadImg').click(function(event) {
+			layer.open({
+				type: 2,
+				title: '图片上传',
+				area: ['480px', '600px'],
+				fix: false, //不固定
+				maxmin: false,
+				scrollbar: false,
+				content: '{:U("Weixin/Indexadmin/add")}'
+			});
+		});
+	</script>
+</body>
+</html>

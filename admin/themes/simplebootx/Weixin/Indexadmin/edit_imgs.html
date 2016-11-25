@@ -1,0 +1,92 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Indexadmin/imgLists')}">图文回复列表</a></li>
+			<li><a href="{:U('Indexadmin/add_imgs')}" target="_self">添加图文回复</a></li>
+			<li class="active"><a href="{:U('Indexadmin/edit_imgs')}" target="_self">编辑图文回复</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Weixin/Indexadmin/edit_imgs_post')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">关键字：</label>
+					<div class="controls">
+						<select name="keyword">
+							{$option}
+						</select>
+						<span class="form-required">请选择关键字</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">标题：</label>
+					<div class="controls">
+						<input type="text" name="title" required placeholder="请输入标题" value="{$info.title}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">链接地址：</label>
+					<div class="controls">
+						<input type="text" name="url" required placeholder="请输入链接地址" value="{$info.url}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<div style="float: left">
+						<label class="control-label" style="margin-top: 50px">头像地址： </label>
+						<div class="controls">
+							<div>
+								<input type="hidden" name="picurl" id="thumb" value="">
+								<a href="javascript:void(0);" onclick="flashupload('thumb_images', '附件上传','thumb',thumb_images,'1,jpg|jpeg|gif|png|bmp,1,,,1','','','');return false;">
+									<if condition="empty($info['picurl'])">
+										<img src="__TMPL__Public/assets/images/default-thumbnail.png" id="thumb_preview" width="135" style="cursor: hand" />
+										<else />
+										<img src="{:sp_get_asset_upload_path($info['picurl'])}" id="thumb_preview" width="135" style="cursor: hand"/>
+									</if>
+								</a>
+								<input type="button" class="btn btn-small" onclick="$('#thumb_preview').attr('src','__TMPL__Public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;" value="取消图片">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">简介：</label>
+					<div class="controls">
+						<textarea class="form-control" rows="5" name="description" required style="width: 420px">{$info.description}</textarea>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<input type="hidden" name="id" value="{$info.id}">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+				<a class="btn" href="{:U('Weixin/Indexadmin/imgLists')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+	<script type="text/javascript">
+		//编辑器路径定义
+		var editorURL = GV.DIMAUB;
+	</script>
+	<script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.all.min.js"></script>
+
+	<script type="text/javascript">
+		//iframe层 上传图片
+		$('.uploadImg').click(function(event) {
+			layer.open({
+				type: 2,
+				title: '图片上传',
+				area: ['480px', '600px'],
+				fix: false, //不固定
+				maxmin: false,
+				scrollbar: false,
+				content: '{:U("Weixin/Indexadmin/add")}'
+			});
+		});
+	</script>
+</body>
+</html>

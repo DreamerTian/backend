@@ -1,0 +1,145 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Weixin/Indexadmin/index')}">{:L('WPNUM_INDEXADMIN_INDEX')}</a></li>
+			<li><a href="{:U('Weixin/Indexadmin/add')}">{:L('WPNUM_ADDADMIN_ADD')}</a></li>
+			<li class="active"><a href="{:U('Weixin/Indexadmin/edit')}">{:L('WPNUM_EDITADMIN_EDIT')}</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Weixin/Indexadmin/edit_post')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">{:L('WPNUMNAME')}：</label>
+					<div class="controls">
+						<input type="text" name="info[wxname]" required value="{$info.wxname}" placeholder="请输入微信公众号名称"/>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">公众号原始id：</label>
+					<div class="controls">
+						<input type="text" name="info[wxid]" required value="{$info.wxid}" placeholder="请输入公众号原始id"/>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">微信号：</label>
+					<div class="controls">
+						<input type="text" name="info[weixin]" required value="{$info.weixin}" placeholder="请输入微信号"/>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">AppID：</label>
+					<div class="controls">
+						<input type="text" name="info[appid]" required value="{$info.appid}" placeholder="请输入AppID"/>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">AppSecret：</label>
+					<div class="controls">
+						<input type="text" name="info[appsecret]" required value="{$info.appsecret}" placeholder="请输入AppSecret"/>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">Token：</label>
+					<div class="controls">
+						<input type="text" name="info[w_token]" required value="{$info.w_token}" placeholder="请输入Token"/>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">EncodingAESKey：</label>
+					<div class="controls">
+						<input type="text" name="info[aeskey]" required value="{$info.aeskey}" placeholder="请输入加密用的EncodingAESKey"/>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<div style="float: left">
+						<label class="control-label" style="margin-top: 50px">头像地址： </label>
+						<div class="controls">
+							<div>
+								<input type="hidden" name="headerpic" id="thumb" value="">
+								<a href="javascript:void(0);" onclick="flashupload('thumb_images', '附件上传','thumb',thumb_images,'1,jpg|jpeg|gif|png|bmp,1,,,1','','','');return false;">
+									<if condition="empty($info['headerpic'])">
+											<img src="__TMPL__Public/assets/images/default-thumbnail.png" id="thumb_preview" width="135" style="cursor: hand" />
+										<else />
+											<img src="{:sp_get_asset_upload_path($info['headerpic'])}" id="thumb_preview" width="135" style="cursor: hand"/>
+									</if>
+								</a>
+								<input type="button" class="btn btn-small" onclick="$('#thumb_preview').attr('src','__TMPL__Public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;" value="取消图片">
+							</div>
+						</div>
+					</div>
+					<div>
+						<label class="control-label" style="margin-top: 50px">二维码： </label>
+						<div class="controls">
+							<div>
+								<input type="hidden" name="qr" id="qr_thumb" value="">
+								<a href="javascript:void(0);" onclick="flashupload('qr_thumb_preview', '附件上传','qr_thumb',thumb_images,'1,jpg|jpeg|gif|png|bmp,1,,,1','','','');return false;">
+									<if condition="empty($info['qr'])">
+										<img src="__TMPL__Public/assets/images/default-thumbnail.png" id="qr_thumb_preview" width="135" style="cursor: hand" />
+									<else/>
+										<img src="{:sp_get_asset_upload_path($info['qr'])}" id="qr_thumb_preview" width="135" style="cursor: hand"/>
+									</if>
+								</a>
+								<input type="button" class="btn btn-small" onclick="$('#qr_thumb_preview').attr('src','__TMPL__Public/assets/images/default-thumbnail.png');$('#qr_thumb').val('');return false;" value="取消图片">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">微信号类型：</label>
+					<div class="controls">
+						<select name="info[type]">
+							<option  <if condition="$info['type'] eq 1">selected</if> value="1">订阅号</option>
+							<option  <if condition="$info['type'] eq 2">selected</if> value="2">认证订阅号</option>
+							<option  <if condition="$info['type'] eq 3">selected</if> value="3">服务号</option>
+							<option  <if condition="$info['type'] eq 4">selected</if> value="4">认证服务号</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">微信号类型：</label>
+					<div class="controls">
+						<input type="radio" name="info[wait_access]" value="0" <if condition="$info['wait_access'] eq 0">checked="checked"</if>/> 等待接入
+						<input type="radio" name="info[wait_access]" value="1" <if condition="$info['wait_access'] eq 1">checked="checked"</if>/> 已接入
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<input type="hidden" name="id" value="{$info.id}">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('EDIT')}</button>
+				<a class="btn" href="{:U('Weixin/Indexadmin/index')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+	<script type="text/javascript">
+		//编辑器路径定义
+		var editorURL = GV.DIMAUB;
+	</script>
+	<script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.all.min.js"></script>
+
+	<script type="text/javascript">
+		//iframe层 上传图片
+		$('.uploadImg').click(function(event) {
+			layer.open({
+				type: 2,
+				title: '图片上传',
+				area: ['480px', '600px'],
+				fix: false, //不固定
+				maxmin: false,
+				scrollbar: false,
+				content: '{:U("Weixin/Indexadmin/add")}'
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<?php
+return array (
+  'app' => 'Admin',
+  'model' => 'Content',
+  'action' => 'default',
+  'data' => '',
+  'type' => '0',
+  'status' => '1',
+  'name' => '内容管理',
+  'icon' => 'th',
+  'remark' => '',
+  'listorder' => '30',
+  'children' => 
+  array (
+    array (
+      'app' => 'Admin',
+      'model' => 'Article',
+      'action' => 'index',
+      'data' => '',
+      'type' => '1',
+      'status' => '1',
+      'name' => '文章管理',
+      'icon' => '',
+      'remark' => '',
+      'listorder' => '1',
+    ),
+    array (
+      'app' => 'Admin',
+      'model' => 'Classify',
+      'action' => 'index',
+      'data' => '',
+      'type' => '1',
+      'status' => '1',
+      'name' => '分类管理',
+      'icon' => '',
+      'remark' => '',
+      'listorder' => '2',
+      'children' => 
+      array (
+        array (
+          'app' => 'Admin',
+          'model' => 'Classify',
+          'action' => 'add',
+          'data' => '',
+          'type' => '1',
+          'status' => '0',
+          'name' => '添加分类',
+          'icon' => '',
+          'remark' => '',
+          'listorder' => '1000',
+        ),
+      ),
+    ),
+  ),
+);

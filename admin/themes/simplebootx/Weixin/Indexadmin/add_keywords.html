@@ -1,0 +1,63 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Weixin/Indexadmin/keywords')}">关键字管理</a></li>
+			<li class="active"><a href="{:U('Weixin/Indexadmin/add_keywords')}">添加关键字</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Weixin/Indexadmin/add_keywords_post')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">关键字：</label>
+					<div class="controls">
+						<input type="text" name="keyword" required value="" placeholder="请输入回复关键字"/>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">回复类型：</label>
+					<div class="controls">
+						<select name="type">
+							<option  value="1">文本</option>
+							<option  value="2">图片</option>
+							<option  value="3">语音</option>
+							<option  value="4">视频</option>
+							<option  value="5">音乐</option>
+							<option  value="6">图文</option>
+							<option  value="7">多图文</option>
+						</select>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+				<a class="btn" href="{:U('Weixin/Indexadmin/keywords')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+	<script type="text/javascript">
+		//编辑器路径定义
+		var editorURL = GV.DIMAUB;
+	</script>
+	<script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.all.min.js"></script>
+
+	<script type="text/javascript">
+		//iframe层 上传图片
+		$('.uploadImg').click(function(event) {
+			layer.open({
+				type: 2,
+				title: '图片上传',
+				area: ['480px', '600px'],
+				fix: false, //不固定
+				maxmin: false,
+				scrollbar: false,
+				content: '{:U("Weixin/Indexadmin/add")}'
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<admintpl file="header" />
+</head>
+<body>
+    <div class="wrap js-check-wrap">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="javascript:;">用户列表</a></li>
+        </ul>
+        
+        <form class="well form-search" method="get" action="{:U('member/index')}" id="search">
+            用户昵称： 
+            <input type="text" name="nickname" style="width: 200px;" value="{$_GET['nickname']}" placeholder="请输入关键字...">
+            <input type="submit" class="btn btn-primary" value="搜索" />
+        </form>
+
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th width="50">ID</th>
+                    <th>用户昵称</th>
+                    <th>咕鸽号</th>
+                    <th>头像</th>
+                    <th>性别</th>
+                    <th>年龄</th>
+                    <th>所在地区</th>
+                    <th>职业</th>
+                    <th>经验值</th>
+                    <th>收益余额</th>
+                    <th>充值余额</th>
+                    <th>认证状态</th>
+                    <th>是否允许直播</th>
+                    <th width="120">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <foreach name="users" item="vo">
+                <tr>
+                    <td>{$vo.id}</td>
+                    <td>{$vo.nickname}</td>
+                    <td>{$vo.number}</td>
+                    <td><img src="{$vo.img}" width="100" height="60"></td>
+                    <td>{$vo['sex'] == 1 ? '男':''}{$vo['sex'] == 2 ? '女':''}{$vo['sex'] === 0 ? '未填写':''}</td>
+                    <?php
+                        $today = date('Y',time());
+                        $birthday = date('Y',$vo['birthday']);
+
+                    ?>
+                    <td>{$birthday ? $today-$birthday:'未填写'}</td>
+                    <td>{$province}{$city}</td>
+                    <td>{$job}</td>
+                    <td>{$experience}</td>
+                    <td>{$earnings}</td>
+                    <td>{$balance}</td>
+                    <td>
+                        {$vo['verify'] == 0 ? '未认证':''}{$vo['verify'] == 1 ? '认证中':''}
+                        {$vo['verify'] == 2 ? '通过认证':''}{$vo['verify'] == 3 ? '认证失败':''}
+                    </td>
+                    <td>{$vo['status'] == 1 ? '允许直播':'禁止直播'}</td>
+                    <td>
+                        <a class="forbid" href='{:U("member/status",array("id"=>$vo["id"],"status"=>3-$vo["status"]))}'>{$vo['status'] == 1 ? '禁止直播':'允许直播'}</a>
+                    </td>
+                </tr>
+                </foreach>
+            </tbody>
+        </table>
+        <div class="pagination">{$page}</div>
+    </div>
+    <script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+    $('.forbid').click(function(event) {
+        var href = $(this).attr('href');
+
+        $.get(href, function(data) {
+            if (data.state === 'success') {
+                //修改成功，刷新页面
+                if (data.referer) {
+                    location.href = data.referer;
+                } else {
+                    reloadPage(window);
+                }
+
+            } else {
+                alert('删除失败');
+            }
+
+
+        },'json');
+
+        return false;
+    });
+
+    // $('#search').submit(function(event) {
+    //     alert(1);
+    //     return false;
+    // });
+
+
+</script>

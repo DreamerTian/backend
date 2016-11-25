@@ -1,0 +1,96 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Indexadmin/concern')}">关注推送列表</a></li>
+			<li class="active"><a href="{:U('Indexadmin/add_concern')}" target="_self">添加关注推送</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Weixin/Indexadmin/add_concern_post')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">类型：</label>
+					<div class="controls">
+						<select class="select_2" name="type" id="select_2">
+							<option value='1'>文本</option>
+							<option value='2'>图文</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">资源：</label>
+					<div class="controls">
+						<a class="btn btn-primary btn-sm" onclick="selectImg()">{:L('选择')}</a>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<!--<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>-->
+				<a class="btn" href="{:U('Indexadmin/concern')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<link rel="stylesheet" href="__PUBLIC__/js/layer/skin/layer.css" id="layui_layer_skinlayercss">
+	<script src="__PUBLIC__/js/layer/layer-min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript">
+
+		function selectImg(){
+
+			var type = $("#select_2").val();
+
+			if(type == 1){
+				layer.open({
+					type: 2,
+					title: '添加资源',
+					shadeClose: true,
+					shade: 0.8,
+					area: ['60%', '60%'],
+					content: '{:U("Indexadmin/texts",array("resources_type"=>1))}', //iframe的url
+				});
+				return;
+			}else if(type == 2){
+				layer.open({
+					type: 2,
+					title: '添加资源',
+					shadeClose: true,
+					shade: 0.8,
+					area: ['60%', '60%'],
+					content: '{:U("Indexadmin/imgLists",array("resources_type"=>2))}', //iframe的url
+				});
+				return;
+			}
+		}
+
+		/*function selected(img,title,id){
+
+			var selected = $('input[name="resources_id"]').val();
+			var s = selected.split(',');
+			s.pop();
+			if($.inArray(id,s) != -1){
+				layer.alert('已经存在', {icon: 2});  //alert(alert("已经存在");
+				return;
+			}
+			//判断是否第一条
+			var img_id = $('input[name="resources_id"]').val();
+			if(!img_id){
+				$('#first-img').attr('src',img);
+				$('#first-text').text(title);
+				$('input[name="resources_id"]').val(id+',');
+			}else{
+				var tpl = '';
+				tpl = '<div class="inner" style="height: 70px;border:solid 1px saddlebrown">';
+				tpl +='<div class="pull-right">';
+				tpl = tpl + '<img src="'+img+'" alt="" width="50" height="50">';
+				tpl +='</div>';
+				tpl = tpl + '<p>'+title+'</p>';
+				tpl +='</div>';
+				$('.bg-aqua').append(tpl);
+				$('input[name="resources_id"]').val(resources_id+id+',');
+
+			}
+			layer.closeAll();
+		}*/
+	</script>
+</body>
+</html>

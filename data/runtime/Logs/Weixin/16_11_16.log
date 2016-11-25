@@ -1,0 +1,556 @@
+[ 2016-11-16T17:12:39+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/imgLists/menuid/171
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: type D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 521 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `gg_wx_img` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gg_wx_img` LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_wx_img` LIMIT 0,20   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `gg_wx_keyword` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_wx_keyword` WHERE ( type=2 ) ORDER BY id desc  [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: picUrl D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 86 行.
+NOTIC: [8] Undefined variable: Page D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 94 行.
+NOTIC: [8] Undefined variable: formget D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T17:12:46+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/edit_imgs/id/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_wx_img` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_wx_img` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `gg_wx_keyword` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_wx_keyword` WHERE ( type=2 ) ORDER BY id desc  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T17:13:01+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/imgLists/menuid/171
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: type D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 521 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `gg_wx_img` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gg_wx_img` LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_wx_img` LIMIT 0,20   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_wx_keyword` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_wx_keyword` WHERE ( type=2 ) ORDER BY id desc  [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: picUrl D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 86 行.
+NOTIC: [8] Undefined variable: Page D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 94 行.
+NOTIC: [8] Undefined variable: formget D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T17:13:21+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/texts/menuid/170
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: type D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 420 行.
+NOTIC: [8] Undefined index: text D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 423 行.
+SQL: SHOW COLUMNS FROM `gg_wx_text` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gg_wx_text` LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_wx_text` LIMIT 0,20   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gg_wx_keyword` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_wx_keyword` WHERE ( type=1 ) ORDER BY id desc  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: Page D:\wamp\www\backend\data\runtime\Cache\Weixin\abc12436185e1ccd73a382c522df9cf2.php 第 90 行.
+NOTIC: [8] Undefined variable: formget D:\wamp\www\backend\data\runtime\Cache\Weixin\abc12436185e1ccd73a382c522df9cf2.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T17:13:22+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/imgLists/menuid/171
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: type D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 521 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `gg_wx_img` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gg_wx_img` LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_wx_img` LIMIT 0,20   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_wx_keyword` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_wx_keyword` WHERE ( type=2 ) ORDER BY id desc  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: picUrl D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 86 行.
+NOTIC: [8] Undefined variable: Page D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 94 行.
+NOTIC: [8] Undefined variable: formget D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T17:13:25+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/edit_imgs/id/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_wx_img` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_wx_img` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `gg_wx_keyword` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_wx_keyword` WHERE ( type=2 ) ORDER BY id desc  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T17:13:38+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/imgLists/menuid/171
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: type D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 521 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `gg_wx_img` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gg_wx_img` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_wx_img` LIMIT 0,20   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `gg_wx_keyword` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_wx_keyword` WHERE ( type=2 ) ORDER BY id desc  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: picUrl D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 86 行.
+NOTIC: [8] Undefined variable: Page D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 94 行.
+NOTIC: [8] Undefined variable: formget D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T17:14:40+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/imgLists/menuid/171
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: type D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 521 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `gg_wx_img` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gg_wx_img` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `gg_wx_img` LIMIT 0,20   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `gg_wx_keyword` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_wx_keyword` WHERE ( type=2 ) ORDER BY id desc  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: Page D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 94 行.
+NOTIC: [8] Undefined variable: formget D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T17:20:33+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/imgLists/menuid/171
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: type D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 521 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `gg_wx_img` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gg_wx_img` LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `gg_wx_img` LIMIT 0,20   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_wx_keyword` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_wx_keyword` WHERE ( type=2 ) ORDER BY id desc  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: Page D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 94 行.
+NOTIC: [8] Undefined variable: formget D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T17:20:36+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/imgLists/menuid/171
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: type D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 521 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `gg_wx_img` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gg_wx_img` LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_wx_img` LIMIT 0,20   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `gg_wx_keyword` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_wx_keyword` WHERE ( type=2 ) ORDER BY id desc  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: Page D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 94 行.
+NOTIC: [8] Undefined variable: formget D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T17:20:39+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/edit_imgs/id/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gg_wx_img` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_wx_img` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `gg_wx_keyword` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_wx_keyword` WHERE ( type=2 ) ORDER BY id desc  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T17:20:46+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/edit_imgs_post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `gg_wx_img` [ RunTime:0.0080s ]
+SQL: UPDATE `gg_wx_img` SET `keyword`='你好',`title`='你好啊',`url`='https://www.baidu.com',`description`='你好你好啊',`id`='22',`uid`='1',`uptatetime`='1479288046' WHERE ( id=22 ) [ RunTime:0.0030s ]
+
+[ 2016-11-16T17:20:46+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/imgLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: type D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 521 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `gg_wx_img` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gg_wx_img` LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_wx_img` LIMIT 0,20   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_wx_keyword` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_wx_keyword` WHERE ( type=2 ) ORDER BY id desc  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: Page D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 94 行.
+NOTIC: [8] Undefined variable: formget D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T17:21:33+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/imgLists/menuid/171
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: type D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 521 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `gg_wx_img` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gg_wx_img` LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_wx_img` LIMIT 0,20   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `gg_wx_keyword` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `gg_wx_keyword` WHERE ( type=2 ) ORDER BY id desc  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: Page D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 94 行.
+NOTIC: [8] Undefined variable: formget D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T17:21:36+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/edit_imgs/id/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `gg_wx_img` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_wx_img` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `gg_wx_keyword` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_wx_keyword` WHERE ( type=2 ) ORDER BY id desc  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T17:21:42+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/edit_imgs_post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `gg_wx_img` [ RunTime:0.0080s ]
+SQL: UPDATE `gg_wx_img` SET `keyword`='你好',`title`='你好啊',`url`='https://www.baidu.com',`picurl`='http://www.backend.com/data/upload/20161116/582c2524a8529.jpg',`description`='你好你好啊',`id`='22',`uid`='1',`uptatetime`='1479288102' WHERE ( id=22 ) [ RunTime:0.0040s ]
+
+[ 2016-11-16T17:21:42+08:00 ] 127.0.0.1 /index.php/Weixin/Indexadmin/imgLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `gg_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `gg_wx_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `gg_wx_user` LIMIT 1   [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: type D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 521 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\backend\application\Weixin\Controller\IndexadminController.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `gg_wx_img` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gg_wx_img` LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gg_wx_img` LIMIT 0,20   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `gg_wx_keyword` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `gg_wx_keyword` WHERE ( type=2 ) ORDER BY id desc  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: Page D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 94 行.
+NOTIC: [8] Undefined variable: formget D:\wamp\www\backend\data\runtime\Cache\Weixin\60cac53c5d98cae1af5db3a67bb2e40c.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
