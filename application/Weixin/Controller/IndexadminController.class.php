@@ -927,6 +927,9 @@ class IndexadminController extends AdminbaseController {
 		if($_POST['sex']){
 			$map['sex'] = $_POST['sex'];
 		}
+		if($_POST['isblack']){
+			$map['isblack'] = $_POST['isblack'];
+		}
 		if($_POST['nickname']){
 			$map['nickname'] = array('like', '%' . trim($_POST['nickname']) . '%');
 		}
@@ -952,9 +955,72 @@ class IndexadminController extends AdminbaseController {
 		$openid = trim(I('openid'));
 		$remark = trim(I('remark'));
 
+		$data = json_encode(array('openid'=>$openid,'remark'=>$remark));
+
 		// 1.获取access_token
 		$accessToken = $this->get_access_token();
+
+		$url = "https://api.weixin.qq.com/cgi-bin/user/info/updateremark?access_token=".$accessToken;
+
+		$res = $this->wxsdk->httpRequest($url,'post',$data);
+
+		if($res['errcode'] == 0){
+			if(M('wx_users')->where(array('openid'=>$openid))->setField('remark',$remark)!==false){
+				$this->success('添加成功',U('Indexadmin/usersList'));
+				exit;
+			}else{
+				$this->error('添加失败');
+			}
+		}else{
+			$this->error($res['errcode'].'--'.$res['errmsg']);
+		}
 	}
 
+	/*
+	 * 	拉黑用户、取消拉黑
+	 * */
+	public function batchBlack(){
+		// 1.获取access_token
+		$accessToken = $this->get_access_token();
+		$type = intval(I('type'));
+		if($type == 1){
+			$url = "https://api.weixin.qq.com/cgi-bin/tags/members/batchblacklist?access_token=".$accessToken;
+		}else{
+			$url = "https://api.weixin.qq.com/cgi-bin/tags/members/batchunblacklist?access_token=".$accessToken;
+		}
 
+		//单选删除
+		if(isset($_GET['openid'])){
+			$ids = trim(I("get.openid"));
+			$data = json_encode(array('opened_list'=>[$ids]));
+		}
+		//多选删除
+		if(isset($_POST['ids'])){
+			$ids = join('","',$_POST['ids']);
+			$openids = json_encode(array('opened_list'=>[$ids]));
+			$data = str_replace("\\",'',$openids);
+		}
+
+		$res = $this->wxsdk->httpRequest($url,'post',$data);
+		if($res['errcode'] == 0){
+			if($type == 1){
+				if(M('wx_users')->where(array('openid'=>['in',$ids]))->setField('isblack',1)!==false){
+					$this->success('拉黑成功',U('Indexadmin/usersList'));
+					exit;
+				}else{
+					$this->error('拉黑失败');
+				}
+			}else{
+				if(M('wx_users')->where(array('openid'=>['in',$ids]))->setField('isblack',0)!==false){
+					$this->success('取消拉黑成功',U('Indexadmin/usersList'));
+					exit;
+				}else{
+					$this->error('取消拉黑失败');
+				}
+			}
+
+		}else{
+			$this->error($res['errcode'].'--'.$res['errmsg']);
+		}
+	}
 }

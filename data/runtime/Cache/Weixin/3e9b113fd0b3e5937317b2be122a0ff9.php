@@ -50,15 +50,19 @@ var GV = {
         <ul class="nav nav-tabs">
             <li class="active"><a href="javascript:;">微信用户列表</a></li>
         </ul>
-
         <form class="well form-search" method="post" action="<?php echo U('Weixin/Indexadmin/usersList');?> " style="width:85%;float:left;">
             性别：
-            关键字：
             <select class="select_2" name="sex">
                 <option value="">全部</option>
                 <option value="1">男</option>
                 <option value="2">女</option>
                 <option value="0">保密</option>
+            </select>
+            黑名单：
+            <select class="select_2" name="isblack">
+                <option value="">全部</option>
+                <option value="1">黑名单</option>
+                <option value="0">开启</option>
             </select>
             昵称：
             <input type="text" name="nickname" style="width: 200px;" placeholder="请输入昵称...">
@@ -67,40 +71,51 @@ var GV = {
             
         </form>
         <a class="well form-search" href = "<?php echo U('Weixin/Indexadmin/getUsers',array('next_openid'=>$next_openid));?>" style="margin-left:1%;width:8%;float:left;"><button>更新用户</button></a>
-
-        <table class="table table-hover table-bordered">
-            <thead>
-                <tr>
-                    <th width="50">ID</th>
-                    <th>用户昵称</th>
-                    <th>用户头像</th>
-                    <th>用户性别</th>
-                    <th>用户备注</th>
-                    <th>所在地区</th>
-                    <th>关注状态</th>
-                    <th>关注时间</th>
-                    <th>注册时间</th>
-                    <th width="120">操作</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php if(is_array($lists)): foreach($lists as $key=>$vo): ?><tr>
-                    <td><?php echo ($vo["id"]); ?></td>
-                    <td><?php echo ($vo["nickname"]); ?></td>
-                    <td><img src="<?php echo ($vo['headimgurl']); ?>" width="50" height="45" class="img-circle"></td>
-                    <td><?php echo ($vo['sex'] == 1 ? '男':''); echo ($vo['sex'] == 2 ? '女':''); echo ($vo['sex'] == 0 ? '保密':''); ?></td>
-                    <td><?php echo ($vo["remark"]); ?></td>
-                    <td><?php echo ($vo['country']); ?>-<?php echo ($vo['province']); ?>-<?php echo ($vo['city']); ?></td>
-                    <td><?php echo ($vo['subscribe'] == 1 ? '关注':''); echo ($vo['subscribe'] == 0 ? '未关注':''); ?></td>
-                    <td><?php echo (date("Y-m-d H:i",$vo['subscribe_time'] )); ?></td>
-                    <td><?php echo (date("Y-m-d H:i",$vo['createtime'] )); ?></td>
-                    <td>
-                        <button class="btn btn-primary" id="label" onclick="setRemark('<?php echo ($vo["openid"]); ?>')">修改备注</button>
-                    </td>
-                </tr><?php endforeach; endif; ?>
-            </tbody>
-        </table>
-        <div class="pagination"><?php echo ($page); ?></div>
+        <form class="js-ajax-form" action="" method="post">
+            <div class="table-actions">
+                <button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="<?php echo U('Indexadmin/batchBlack',array('type'=>1));?>" data-subcheck="true" data-msg="你确定拉黑吗？">拉黑</button>
+                <button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="<?php echo U('Indexadmin/batchBlack');?>" data-subcheck="true" data-msg="你确定取消拉黑吗？">取消拉黑</button>
+            </div>
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+                        <th width="50">ID</th>
+                        <th>用户昵称</th>
+                        <th>用户头像</th>
+                        <th>用户性别</th>
+                        <th>用户备注</th>
+                        <th>所在地区</th>
+                        <th>关注状态</th>
+                        <th>拉黑状态</th>
+                        <th>关注时间</th>
+                        <th>注册时间</th>
+                        <th width="260">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php if(is_array($lists)): foreach($lists as $key=>$vo): ?><tr>
+                        <td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="<?php echo ($vo["openid"]); ?>" title="OPENID:<?php echo ($vo["openid"]); ?>"></td>
+                        <td><?php echo ($vo["id"]); ?></td>
+                        <td><?php echo ($vo["nickname"]); ?></td>
+                        <td><img src="<?php echo ($vo['headimgurl']); ?>" width="50" height="45" class="img-circle"></td>
+                        <td><?php echo ($vo['sex'] == 1 ? '男':''); echo ($vo['sex'] == 2 ? '女':''); echo ($vo['sex'] == 0 ? '保密':''); ?></td>
+                        <td><?php echo ($vo["remark"]); ?></td>
+                        <td><?php echo ($vo['country']); ?>-<?php echo ($vo['province']); ?>-<?php echo ($vo['city']); ?></td>
+                        <td><?php echo ($vo['subscribe'] == 1 ? '关注':''); echo ($vo['subscribe'] == 0 ? '未关注':''); ?></td>
+                        <td><?php echo ($vo['isblack'] == 1 ? '拉黑':''); echo ($vo['isblack'] == 0 ? '开启':''); ?></td>
+                        <td><?php echo (date("Y-m-d H:i",$vo['subscribe_time'] )); ?></td>
+                        <td><?php echo (date("Y-m-d H:i",$vo['createtime'] )); ?></td>
+                        <td>
+                            <a href='<?php echo U("Indexadmin/batchBlack",array("openid"=>$vo["openid"],"type"=>1));?>' class="btn btn-danger">拉黑</a>
+                            <a href='<?php echo U("Indexadmin/batchBlack",array("openid"=>$vo["openid"]));?>' class="btn btn-danger">取消拉黑</a>
+                            <button class="btn btn-primary" id="label" onclick="setRemark('<?php echo ($vo["openid"]); ?>')">修改备注</button>
+                        </td>
+                    </tr><?php endforeach; endif; ?>
+                </tbody>
+            </table>
+            <div class="pagination"><?php echo ($page); ?></div>
+        </form>
     </div>
 
     <script src="/public/js/common.js"></script>
@@ -108,6 +123,13 @@ var GV = {
 </body>
 </html>
 <script type="text/javascript">
+    function setRemark(openid){
+        if(openid){
+            var index = layer.open({
+                content:'<form class="well form-search" method="post" action="<?php echo U("Weixin/Indexadmin/setRemark");?>">备注：<input type="text" name="remark"><input type="hidden" value="'+openid+'" name="openid"><br/><button class="btn btn-primary" style="margin: 20px 0px 0px 200px">提交</button></form>'
+            });
+        }
+    };
     $('.forbid').click(function(event) {
         var href = $(this).attr('href');
 
@@ -123,41 +145,42 @@ var GV = {
             } else {
                 alert('删除失败');
             }
-
-
         },'json');
-
         return false;
     });
+    $(function() {
+        setCookie("refersh_time", 0);
+        Wind.use('ajaxForm', 'artDialog', 'iframeTools', function() {
+            //批量移动
+            $('.js-articles-move').click(function(e) {
+                var str = 0;
+                var id = tag = '';
+                $("input[name='ids[]']").each(function() {
+                    if ($(this).attr('checked')) {
+                        str = 1;
+                        id += tag + $(this).val();
+                        tag = ',';
+                    }
+                });
+                if (str == 0) {
+                    art.dialog.through({
+                        id : 'error',
+                        icon : 'error',
+                        content : '您没有勾选信息，无法进行操作！',
+                        cancelVal : '关闭',
+                        cancel : true
+                    });
+                    return false;
+                }
+                var $this = $(this);
 
-    function setRemark(id){
+                var httpurl = "<?php echo U('article/move');?>";
 
-        layer.open({
-            type: 2,
-            title: false,
-            closeBtn: false,
-            area: ['320px','500px'],
-            skin: 'layui-layer-nobg', //没有背景色
-            shadeClose: true,
-            content: '<div id="label-box"><div class="row-fluid"> <div class="span"> <form action="<?php echo U("Indexamin/setRemark");?>" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
-                <table class="table table-bordered">
-                <tr>
-                <th width="80">标签</th>
-                <td>
-                <textarea class="form-control" rows="3" style="width: 300px" name="remark" placeholder="请输入关键字，以逗号分割"></textarea>
-                </td>
-                </tr>
-                </table>
-                <div class="form-actions">
-                <input type="hidden" name="id" value="">
-                <button type="submit" class="btn btn-primary js-ajax-submit" id="submit"><?php echo L('提交');?></button>
-    </div>
-    </form>
-    </div>
-    </div>
-    </div>,
+                art.dialog.open(httpurl, {
+                    title : "批量移动",
+                    width : "80%"
+                });
+            });
         });
-    }
-
-
+    });
 </script>

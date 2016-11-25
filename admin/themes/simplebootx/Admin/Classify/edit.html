@@ -32,16 +32,6 @@
 									<textarea name="description" rows="5" cols="57">{$data.description}</textarea>
 								</div>
 							</div>
-							<!-- <div class="control-group">
-								<label class="control-label">分类类型</label>
-								<div class="controls">
-									<select name="taxonomy">
-										<foreach name="taxonomys" item="vo"> <php>$selected=$data['taxonomy']==$key?"selected":""</php>
-										<option value="{$key}"{$selected}>{$vo}</option>
-										</foreach>
-									</select>
-								</div>
-							</div> -->
 						</fieldset>
 					</div>
 
@@ -108,7 +98,7 @@
 			</div>
 			<div class="form-actions">
 				<button class="btn btn-primary js-ajax-submit" type="submit">{:L('SAVE')}</button>
-				<a class="btn" href="{:U('AdminTerm/index')}">{:L('BACK')}</a>
+				<a class="btn" href="{:U('Classify/index')}">{:L('BACK')}</a>
 			</div>
 		</form>
 	</div>
