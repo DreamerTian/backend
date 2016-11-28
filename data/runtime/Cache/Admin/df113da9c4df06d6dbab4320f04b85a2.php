@@ -98,7 +98,7 @@ var GV = {
 				<?php if(is_array($posts)): foreach($posts as $key=>$vo): ?><tr>
 					<td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="<?php echo ($vo["tid"]); ?>" title="ID:<?php echo ($vo["tid"]); ?>"></td>
 					<td><input name="listorders[<?php echo ($vo["tid"]); ?>]" class="input input-order" type="text" size="5" value="<?php echo ($vo["listorder"]); ?>" title="ID:<?php echo ($vo["tid"]); ?>"></td>
-					<td><a href="<?php echo U('Admin/article/info',array('id'=>$vo['tid']));?>" target="_blank"> <span><?php echo ($vo["post_title"]); ?></span></a></td>
+					<td><a href="<?php echo U('Admin/article/info',array('id'=>$vo['id']));?>" target="_blank"> <span><?php echo ($vo["post_title"]); ?></span></a></td>
 					<td><?php echo ($terms[$vo['term_id']]); ?></td>
 					<td><?php echo ($vo["post_hits"]); ?></td>
 					<td><a href="javascript:open_iframe_dialog('<?php echo U('comment/commentadmin/index',array('post_id'=>$vo['id']));?>','评论列表')"><?php echo ($vo["comment_count"]); ?></a></td>

@@ -49,9 +49,9 @@ var GV = {
 	<div class="wrap js-check-wrap">
 		<ul class="nav nav-tabs">
 			<li ><a href="<?php echo U('Article/index');?>">文章管理</a></li>
-			<li class="active"><a href="<?php echo U('Article/add',array('term'=>empty($term['term_id'])?'':$term['term_id']));?>" target="_self">添加文章</a></li>
+			<li class="active"><a href="<?php echo U('Admin/Article/add',array('term'=>empty($term['term_id'])?'':$term['term_id']));?>" target="_self">添加文章</a></li>
 		</ul>
-		<form action="<?php echo U('Article/add_post');?>" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
+		<form action="<?php echo U('Admin/Article/add_post');?>" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
 			<div class="row-fluid">
 				<div class="span9">
 					<table class="table table-bordered">

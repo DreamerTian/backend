@@ -52,18 +52,28 @@ class ArticleController extends AdminbaseController{
 			$article=I("post.post");
 			$article['smeta']=json_encode($_POST['smeta']);
 			$article['post_content']=htmlspecialchars_decode($article['post_content']);
+
 			$result=$this->posts_model->add($article);
-			if ($result) {
-				//
+			$data = array(
+				'uid' 		=> get_current_admin_id(),
+				'title'		=> $article['post_title'],
+				'keyword'	=> $article['post_keywords'],
+				'description' => $article['post_excerpt'],
+				'posts_id' 	=> $result,
+				'picurl' 	=> "http://".$_SERVER['SERVER_NAME'].UPLOADS.sp_asset_relative_url($_POST['smeta']['thumb']),
+				'url' 		=> "http://".$_SERVER['SERVER_NAME']."/index.php/Admin/article/info/id/".$result,
+				'createtime'=> time(),
+			);
+			$res = M('wx_img')->add($data);
+			if ($result && $res) {
 				foreach ($_POST['term'] as $mterm_id){
 					$this->term_relationships_model->add(array("term_id"=>intval($mterm_id),"object_id"=>$result));
 				}
-				
 				$this->success("添加成功！");
 			} else {
 				$this->error("添加失败！");
 			}
-			 
+
 		}
 	}
 	
